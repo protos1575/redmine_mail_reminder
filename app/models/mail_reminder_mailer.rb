@@ -28,7 +28,7 @@ class MailReminderMailer < ActionMailer::Base
     @queries_data = []
     queries_data.each do |project, query|
       query.project = project
-      issues = query.issues(:include => [:assigned_to, :tracker, :priority, :category, :fixed_version])
+      issues = query.issues(:include => [:assigned_to, :tracker, :priority, :category, :fixed_version], :order => [])
       @queries_data << [project, query, issues] if issues.any?
     end
 
