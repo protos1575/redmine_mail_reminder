@@ -11,6 +11,8 @@ Compatible with redmine 3.3, 3.2
 
 redmine 3.4 is not tested yet.
 
+add a litle patch that it works now with 3.4.4
+
 Plugin provides an easy to use interface to set up automatic email reminder to every project. 
 Every reminder uses a custom query with all their filter options to select issues 
 and performs periodical email transmission on a role basis.
